@@ -138,7 +138,7 @@ java  -cp .:jlayer.jar src.gerenciador.pass
 You can also find me here:
 
 - [YouTube](https://www.youtube.com/channel/UCShSeONE08BE3c2Vw_F2hlA)
-- [LinkedIn](https://www.linkedin.com/in/vitor-souza-dev/)
+- [LinkedIn](https://www.linkedin.com/in/vitorsouzaretr0/)
 - [Instagram](https://instagram.com/bbydlux)
 
 ---
