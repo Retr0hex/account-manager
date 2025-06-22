@@ -1,7 +1,7 @@
 
 # 🗂️ Account Manager – Java Swing
 
-A lightweight offline account manager built with **Java Swing**, featuring animated gradients and a minimalist interface. No databases, no third-party dependencies (other than music playback), and no internet required.
+Offline account manager built with **Java Swing**, with animated gradients and simple interface. No databases, no third-party dependencies (other than music playback).
 
 ---
 
