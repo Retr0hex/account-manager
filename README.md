@@ -10,7 +10,7 @@ A lightweight offline account manager built with **Java Swing**, featuring anima
 - ✅ **Offline** – No internet connection required.
 - 🖥️ **Gradient** – Custom styled interface with animated gradient background.
 - 🔐 **Secure** – Passwords are saved locally with a log file.
-- 🎵 **Music** – Retro-inspired soundtrack plays automatically on launch.
+- 🎵 **Music** – Simple soundtrack from a childhood game.
 - 📜 **Local storage** – Credentials are written to a `passlog.txt` on your Desktop.
 
 ---
