@@ -3,34 +3,38 @@
 
 A lightweight offline account manager built with **Java Swing**, featuring animated gradients and a minimalist interface. No databases, no third-party dependencies (other than music playback), and no internet required.
 
-Developed by **Vitor Souza**, this project was designed as a simple way to store and view login credentials locally, with a sleek visual and smooth UX for desktop environments.
-
 ---
 
 ## 🎯 Features
 
-- ✅ **Offline-First** – No internet connection required.
-- 🖥️ **Modern UI** – Custom styled interface with animated gradient background.
-- 🔐 **Secure-ish** – Passwords are saved locally, not sent anywhere.
-- 🎵 **Background Music** – Retro-inspired soundtrack plays automatically on launch.
-- 📜 **Persistent Storage** – Credentials are written to a `passlog.txt` on your Desktop.
-- 🧰 **No Database** – Uses plain `.txt` files for simplicity.
+- ✅ **Offline** – No internet connection required.
+- 🖥️ **Gradient** – Custom styled interface with animated gradient background.
+- 🔐 **Secure** – Passwords are saved locally with a log file.
+- 🎵 **Music** – Retro-inspired soundtrack plays automatically on launch.
+- 📜 **Local storage** – Credentials are written to a `passlog.txt` on your Desktop.
 
 ---
 
 ## 📸 Preview
 
-![preview-placeholder](docs/screenshot.png) <!-- Add a screenshot path if available -->
+First time opening the program.
+![image](https://github.com/user-attachments/assets/47af9a43-48a0-4c07-8605-8853a92ed2fc)
+
+Adding an account.
+![image](https://github.com/user-attachments/assets/96b0474b-3b05-498d-bcff-9bf6a8882b85)
+
+Checking saved accounts.
+![image](https://github.com/user-attachments/assets/3e0e0f96-54b1-459c-9020-ee6c2256efb3)
 
 ---
 
 ## 🧠 How It Works
 
-The application is built entirely with **Java Swing**, using `JFrame`, `JPanel`, and custom rendering to achieve a visually appealing desktop GUI.
+The application is built entirely with **Java Swing**, using `JFrame`, `JPanel`.
 
 ### 🔄 Gradient Background
 
-The main frame background features a **diagonal animated gradient**, powered by HSB (Hue-Saturation-Brightness) color manipulation. This gives the UI a pulsing visual effect that cycles through warm tones every 30ms using `java.util.Timer`.
+The main frame background features a **diagonal animated gradient** with HSB color manipulation. This gives the UI a pulsing visual effect that cycles through red tones every 30ms using `java.util.Timer`.
 
 ```java
 startColor = Color.getHSBColor(0, 1.0f, 0.4f + 0.2f * sin(hue * 2 * π));
@@ -43,6 +47,7 @@ Background music is played via [`JLayer`](http://www.javazoom.net/javalayer/java
 
 - Song path: `src/assets/song.mp3`
 - Playback: Runs in a separate thread to avoid blocking UI events
+- Song is from Syphon Filter: Dark Mirror.
 
 ### 📝 Adding an Account
 
@@ -69,9 +74,9 @@ Each entry is stored like:
 
 ```
 Origin: example.com
-User: john_doe
-Email: john@example.com
-password: mySecret123
+User: test_s
+Email: test@gmail.com
+password: supertest123
 ------------------------------
 ```
 
@@ -83,29 +88,29 @@ Clicking **“Saved accounts”** opens a `JTextArea` inside a scrollable dialog
 
 ---
 
-## 🚀 Getting Started
+## 🚀 How to run it
 
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/bbydlux/account-manager-swing.git
-cd account-manager-swing
+git clone https://github.com/retr0hex/account-manager.git
+cd account-manager
 ```
 
 ### 2. Run the App
 
-Ensure you are using JDK 8+ and have [JLayer](http://www.javazoom.net/javalayer/javalayer.html) in your classpath.
+Ensure you are using JDK 8+ and have [JLayer](http://www.javazoom.net/javalayer/javalayer.html) in your classpath. (The file is also in the folder if you want it)
 
 ```bash
 javac -cp .:jlayer.jar src/gerenciador/pass.java
 java  -cp .:jlayer.jar src.gerenciador.pass
 ```
 
-> 🛠 If using an IDE like **VSCode** or **IntelliJ**, make sure to add `jlayer.jar` as a library.
+> 🛠 If using an IDE like **VSCode** or **NetBeans**, make sure to add `jlayer.jar` as a library.
 
 ---
 
-## 📁 Project Structure
+## 📁 Structure
 
 ```
 📦 src/
@@ -125,30 +130,12 @@ java  -cp .:jlayer.jar src.gerenciador.pass
 
 ---
 
-## 📝 Known Limitations
-
-- No encryption (yet): passwords are saved as **plain text**
-- No search or filter functionality
-- Only supports saving to Desktop
-- Single session song playback (does not loop or shuffle)
-
----
-
-## 📌 Future Improvements
-
-- [ ] AES encryption for stored credentials
-- [ ] In-app password search/filter
-- [ ] Option to export/import accounts
-- [ ] Music toggle & playlist support
-- [ ] Dark mode toggle
-
----
 
 ## 👨‍💻 Author
 
 **Vitor Souza**  
-A developer who prefers simplicity over complexity.  
-Passionate about UI polish, even in Swing 😅
+
+You can also find me here:
 
 - [YouTube](https://www.youtube.com/channel/UCShSeONE08BE3c2Vw_F2hlA)
 - [LinkedIn](https://www.linkedin.com/in/vitor-souza-dev/)
@@ -156,9 +143,4 @@ Passionate about UI polish, even in Swing 😅
 
 ---
 
-## 📄 License
-
-This project is free to use, modify, break, or improve. No strings attached.  
-If you do make something cool out of it — let me know, I’d love to see it.
-
----
+You are free to use this project as you wish. Break it, improve it, tweak it, have fun.
